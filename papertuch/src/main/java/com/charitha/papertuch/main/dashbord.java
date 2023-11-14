@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.charitha.papertuch.main;
+import java.awt.*;
 
 /**
  *
@@ -15,6 +16,19 @@ public class dashbord extends javax.swing.JFrame {
      */
     public dashbord() {
         initComponents();
+        // Get the default toolkit
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+
+        // Get the screen size
+        Dimension screenSize = toolkit.getScreenSize();
+
+        // Get the width and height of the screen
+        int screenWidth = screenSize.width;
+        int screenHeight = screenSize.height;
+
+        // Display the screen size
+        System.out.println("Screen Width: " + screenWidth);
+        System.out.println("Screen Height: " + screenHeight);
     }
 
     /**
